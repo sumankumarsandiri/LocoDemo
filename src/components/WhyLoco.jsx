@@ -33,64 +33,39 @@ const WhyLoco = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 min-h-screen">
-      <div className="flex flex-col lg:flex-row items-start gap-12">
-        {/* Left Section */}
-        <div className="lg:w-1/2 lg:sticky lg:top-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-navy-900 leading-tight">
-            How
-            <br />
-            Loco
-            <br />
-            <span className="relative inline-block mt-2">
-              <span className="bg-cyan-400 text-white px-6 py-2 rounded-md transform -rotate-2 inline-block">
-                works
-              </span>
-            </span>
-          </h1>
-        </div>
-
-        {/* Right Section */}
-        <div className="lg:w-1/2">
-          <div className="relative">
-            {/* Curved connecting line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-blue-200 via-purple-200 to-green-200 hidden lg:block" />
-
-            <div className="space-y-16">
-              {features.map((feature, index) => (
-                <div
-                  key={feature.title}
-                  className="flex items-start gap-6 group relative"
-                >
-                  {/* Connection dot */}
-                  <div className="hidden lg:block absolute left-8 w-2 h-2 rounded-full bg-white border-2 border-gray-200 transform -translate-x-[5px]" />
-
-                  {/* Icon */}
-                  <div
-                    className={`${feature.bgColor} p-4 rounded-2xl transition-transform duration-300 group-hover:scale-110`}
-                  >
-                    {feature.icon}
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1">
-                    <h2 className="text-xl font-bold text-gray-900 mb-1">
-                      {feature.title}
-                    </h2>
-                    <p className={`${feature.textColor} font-medium mb-2`}>
-                      {feature.subtitle}
-                    </p>
-                    <p className="text-gray-600 leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+    <section
+      id="how-it-works"
+      className="w-full py-12 md:py-24 lg:py-32 transition-opacity duration-1000"
+    >
+      <div className="container px-4 md:px-6">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
+          How It Works
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center text-center">
+            <div className="rounded-full bg-primary text-primary-foreground p-3 mb-4">
+              1
             </div>
+            <h3 className="text-xl font-bold mb-2">Sign Up</h3>
+            <p>Create your account and tell us about your business.</p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <div className="rounded-full bg-primary text-primary-foreground p-3 mb-4">
+              2
+            </div>
+            <h3 className="text-xl font-bold mb-2">Customize</h3>
+            <p>Tailor your AI chatbot to match your brand and needs.</p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <div className="rounded-full bg-primary text-primary-foreground p-3 mb-4">
+              3
+            </div>
+            <h3 className="text-xl font-bold mb-2">Go Live</h3>
+            <p>Launch your chatbot and start engaging customers instantly.</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
