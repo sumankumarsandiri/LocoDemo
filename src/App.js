@@ -14,6 +14,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Verify from "./pages/Verify";
 import Products from "./components/side/Products";
+import Pricing from "./components/side/Pricing";
 // import { Callback } from "./pages/Callback";
 
 // import { LogtoConfig, LogtoProvider } from "@logto/react";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:speciality" element={<Products />} />
+          <Route path="/pricing" element={<Pricing />} />
           {/* <Route path="/callback" element={<Callback />} /> */}
           {/* <Route path="/doctors" element={<Doctors />} />
         <Route path="/doctors/:speciality" element={<Doctors />} /> */}

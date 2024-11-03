@@ -8,11 +8,14 @@ import Middle from "../components/Middle";
 import MiddleDown from "../components/MiddleDown";
 import WhyLoco from "../components/WhyLoco";
 import KeyFeatures from "../components/side/KeyFeatures";
+import FrontSide from "../components/side/FrontSide";
+// import Pricing from "../components/side/Pricing";
 
 const Home = () => {
   return (
     <div>
       <Header />
+
       {/* <SpecialityMenu /> */}
       <WhatWeDo />
       <Middle />
@@ -20,6 +23,8 @@ const Home = () => {
       <Banner />
       <MiddleDown />
       <WhyLoco />
+      <FrontSide />
+      {/* <Pricing /> */}
       {/* <TopDoctors /> */}
     </div>
   );

@@ -44,6 +44,9 @@ import Email from "./images/imagesemail.png";
 import restarent from "./images/manila-bay-kitchen-is.jpg";
 import clothstore from "./images/spring_collection_2022_delhi_2.jpg";
 import furniture from "./images/Banjarahills-store-mobile.jpg";
+import { IoMdPerson } from "react-icons/io";
+import { BiCustomize } from "react-icons/bi";
+import { CiStreamOn } from "react-icons/ci";
 
 export const assets = {
   appointment_img,
@@ -173,6 +176,96 @@ export const online = [
     category: "furniture",
     title: "furniture",
     speciality: "Customer Services",
+  },
+];
+
+export const plans = [
+  {
+    name: "Starter",
+    description: "Perfect for small businesses just getting started with AI.",
+    price: 49,
+    // price: isAnnual ? 470 : 49,
+    features: [
+      { name: "AI Chatbot", included: true },
+      { name: "Website Integration", included: true },
+      { name: "Basic Analytics", included: true },
+      { name: "Up to 500 conversations/month", included: true },
+      { name: "Email Support", included: true },
+      { name: "Social Media Integration", included: false },
+      { name: "Advanced Analytics", included: false },
+      { name: "Custom AI Training", included: false, hasTooltip: true },
+      { name: "24/7 Support", included: false },
+      { name: "Multi-language Support", included: false },
+    ],
+  },
+  {
+    name: "Pro",
+    description:
+      "Ideal for growing businesses looking to scale their AI capabilities.",
+    price: 99,
+    features: [
+      { name: "AI Chatbot", included: true },
+      { name: "Website Integration", included: true },
+      { name: "Basic Analytics", included: true },
+      { name: "Up to 2000 conversations/month", included: true },
+      { name: "Email Support", included: true },
+      { name: "Social Media Integration", included: true },
+      { name: "Advanced Analytics", included: true },
+      { name: "Custom AI Training", included: true },
+      { name: "24/7 Support", included: true },
+      { name: "Multi-language Support", included: true },
+    ],
+  },
+  {
+    name: "Enterprise",
+    description:
+      "For large businesses requiring advanced AI solutions and dedicated support.",
+    price: "...",
+    features: [
+      { name: "AI Chatbot", included: true },
+      { name: "Website Integration", included: true },
+      { name: "Basic Analytics", included: true },
+      { name: "Unlimited conversations", included: true },
+      { name: "Email Support", included: true },
+      { name: "Social Media Integration", included: true },
+      { name: "Advanced Analytics", included: true },
+      { name: "Custom AI Training", included: true, hasTooltip: true },
+      { name: "24/7 Support", included: true },
+      { name: "Multi-language Support", included: true },
+    ],
+  },
+];
+
+export const features = [
+  {
+    icon: <IoMdPerson className="w-8 h-8 text-blue-600" />,
+    title: "Sign Up",
+    subtitle: "Get Started with Ease",
+    description:
+      "Create your account and introduce us to your business. Let’s set the foundation for your personalized AI experience.",
+    bgColor: "bg-blue-50",
+    textColor: "text-blue-600",
+    borderColor: "border-blue-200",
+  },
+  {
+    icon: <BiCustomize className="w-8 h-8 text-purple-600" />,
+    title: "Customize",
+    subtitle: "Build Your Perfect Chatbot",
+    description:
+      "Tailor your AI chatbot to reflect your brand’s voice, style, and customer needs. Customize every interaction to enhance engagement.",
+    bgColor: "bg-purple-50",
+    textColor: "text-purple-600",
+    borderColor: "border-purple-200",
+  },
+  {
+    icon: <CiStreamOn className="w-8 h-8 text-green-600" />,
+    title: "Go Live",
+    subtitle: "Engage Your Customers Instantly",
+    description:
+      "Activate your customized AI chatbot and start engaging with your customers in real-time. Watch as it helps enhance customer satisfaction and boosts your business growth!",
+    bgColor: "bg-green-50",
+    textColor: "text-green-600",
+    borderColor: "border-green-200",
   },
 ];
 

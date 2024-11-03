@@ -24,8 +24,7 @@ const Navbar = () => {
           <li className="py-1">PRODUCTS</li>
           <hr className="border-none outline-none h-0.5 bg-teal-400 w-3/5 m-auto hidden" />
         </NavLink>
-        <NavLink to="/">
-          {/* <NavLink to="/about"> */}
+        <NavLink to="/pricing">
           <li className="py-1">PRICING</li>
           <hr className="border-none outline-none h-0.5 bg-teal-400 w-3/5 m-auto hidden" />
         </NavLink>
